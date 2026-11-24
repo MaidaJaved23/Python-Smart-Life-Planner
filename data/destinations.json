@@ -1,0 +1,316 @@
+{
+  "disclaimer": "Costs are estimates based on standard seasonal averages, not guaranteed market prices.",
+  "emergency_allowance_percentage": 0.05,
+  "destinations": [
+    {
+      "id": "murree",
+      "name": "Murree",
+      "region": "Punjab / Galyat",
+      "category": "Mountains",
+      "description": "Queen of hills featuring pine-covered hills, cool mountain breeze, and vibrant Mall Road.",
+      "room_capacity": 2,
+      "base_transport_cost": 3000,
+      "base_accommodation_cost": 5000,
+      "base_food_cost": 1800,
+      "base_activities_cost": 1200,
+      "transport_options": {
+        "Budget": "Economy Public Bus / Hiace (PKR 2,400)",
+        "Standard": "AC Coaster / Saloon Car (PKR 3,000)",
+        "Premium": "Private Executive SUV (PKR 5,400)"
+      },
+      "accommodation_options": {
+        "Budget": "Standard Hotel Room / Lodge (PKR 3,500/night)",
+        "Standard": "3-Star Deluxe Hotel (PKR 5,000/night)",
+        "Premium": "Luxury Hilltop Resort Suite (PKR 10,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Mall Road stroll & shopping",
+        "Patriata (New Murree) Chairlift & Cable Car ride",
+        "Kashmir Point scenic viewpoint",
+        "Pindi Point pine walk",
+        "Bhurban resort & golf club visit"
+      ]
+    },
+    {
+      "id": "nathiagali",
+      "name": "Nathiagali",
+      "region": "Khyber Pakhtunkhwa / Galyat",
+      "category": "Mountains",
+      "description": "Peaceful scenic hill station known for hiking tracks, oak forests, and cooler climate.",
+      "room_capacity": 2,
+      "base_transport_cost": 3500,
+      "base_accommodation_cost": 6000,
+      "base_food_cost": 2000,
+      "base_activities_cost": 1500,
+      "transport_options": {
+        "Budget": "Shared Coaster (PKR 2,800)",
+        "Standard": "AC Private Saloon (PKR 3,500)",
+        "Premium": "Chauffeured 4WD SUV (PKR 6,300)"
+      },
+      "accommodation_options": {
+        "Budget": "Rest House / Guesthouse (PKR 4,200/night)",
+        "Standard": "Heritage 3-Star Hotel (PKR 6,000/night)",
+        "Premium": "Elite Mountain Resort (PKR 12,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Mukshpuri Peak scenic mountain hike",
+        "Pipeline Walking Track through dense woods",
+        "Miranjani Peak alpine trek",
+        "Governor House viewpoint and colonial church",
+        "Dunga Gali pine ridge trail"
+      ]
+    },
+    {
+      "id": "swat",
+      "name": "Swat",
+      "region": "Khyber Pakhtunkhwa",
+      "category": "Mountains",
+      "description": "The Switzerland of the East with cascading rivers, Buddhist heritage, and snowcapped peaks.",
+      "room_capacity": 2,
+      "base_transport_cost": 5000,
+      "base_accommodation_cost": 7000,
+      "base_food_cost": 2200,
+      "base_activities_cost": 1800,
+      "transport_options": {
+        "Budget": "Express Bus / Van (PKR 4,000)",
+        "Standard": "Comfort AC Coaster (PKR 5,000)",
+        "Premium": "Private Prado / Fortuner (PKR 9,000)"
+      },
+      "accommodation_options": {
+        "Budget": "Riverside Guesthouse (PKR 4,900/night)",
+        "Standard": "3-Star Riverfront Hotel (PKR 7,000/night)",
+        "Premium": "Luxury Ski & Mountain Resort (PKR 14,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Malam Jabba ski resort & zipline",
+        "White Palace Marghazar historic royal residence",
+        "Fizagat Park along Swat River",
+        "Swat Museum & Buddhist archaeological sites",
+        "Mingora bazaar & traditional handicraft shopping"
+      ]
+    },
+    {
+      "id": "kalam",
+      "name": "Kalam",
+      "region": "Khyber Pakhtunkhwa / Swat Valley",
+      "category": "Lakes & Nature",
+      "description": "Upper Swat alpine paradise surrounded by cedar forests, glacial lakes, and waterfalls.",
+      "room_capacity": 2,
+      "base_transport_cost": 6500,
+      "base_accommodation_cost": 7500,
+      "base_food_cost": 2400,
+      "base_activities_cost": 2000,
+      "transport_options": {
+        "Budget": "Shared Local Coaster (PKR 5,200)",
+        "Standard": "Direct AC Van / Coaster (PKR 6,500)",
+        "Premium": "Dedicated 4x4 Mountain Jeep (PKR 11,700)"
+      },
+      "accommodation_options": {
+        "Budget": "Alpine Wooden Cottage (PKR 5,250/night)",
+        "Standard": "Pine View Hotel (PKR 7,500/night)",
+        "Premium": "Luxury Glamping / River Resort (PKR 15,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Mahodand Lake crystal water boating",
+        "Ushu Cedar Forest walk & nature photography",
+        "Matiltan waterfall & glacial stream",
+        "Saifullah Lake tranquil trek",
+        "Kalam valley riverside bonfire"
+      ]
+    },
+    {
+      "id": "hunza",
+      "name": "Hunza",
+      "region": "Gilgit-Baltistan",
+      "category": "Mountains",
+      "description": "Legendary valley on Karakoram Highway with ancient forts, turquoise lakes, and apricot blossoms.",
+      "room_capacity": 2,
+      "base_transport_cost": 12000,
+      "base_accommodation_cost": 9000,
+      "base_food_cost": 2800,
+      "base_activities_cost": 2500,
+      "transport_options": {
+        "Budget": "NATCO Highway Bus (PKR 9,600)",
+        "Standard": "Tour Operator AC Coaster (PKR 12,000)",
+        "Premium": "Flight to Gilgit + Private Luxury Prado (PKR 21,600)"
+      },
+      "accommodation_options": {
+        "Budget": "Karimabad Traditional Inn (PKR 6,300/night)",
+        "Standard": "Valley View 3-Star Hotel (PKR 9,000/night)",
+        "Premium": "Serena Hunza Heritage Luxury Hotel (PKR 18,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Baltit & Altit Forts historical tour",
+        "Attabad Lake jet ski & boating",
+        "Hussaini Suspension Bridge walk",
+        "Passu Cones viewpoint & glacier hike",
+        "Eagle's Nest viewpoint at Duikar (sunrise/sunset)",
+        "Khunjerab Pass Pakistan-China border visit"
+      ]
+    },
+    {
+      "id": "skardu",
+      "name": "Skardu",
+      "region": "Gilgit-Baltistan",
+      "category": "Lakes & Nature",
+      "description": "Gateway to K2 and high peaks, boasting cold deserts, alpine lakes, and historic forts.",
+      "room_capacity": 2,
+      "base_transport_cost": 14000,
+      "base_accommodation_cost": 9500,
+      "base_food_cost": 3000,
+      "base_activities_cost": 2800,
+      "transport_options": {
+        "Budget": "Overland Passenger Bus (PKR 11,200)",
+        "Standard": "Tourist Coaster / Shared Van (PKR 14,000)",
+        "Premium": "Scenic Flight to Skardu + 4WD Land Cruiser (PKR 25,200)"
+      },
+      "accommodation_options": {
+        "Budget": "Standard City Hotel (PKR 6,650/night)",
+        "Standard": "3-Star Mountain Resort (PKR 9,500/night)",
+        "Premium": "Shangrila / Serena Shigar Palace (PKR 19,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Shangrila Resort & Lower Kachura Lake",
+        "Upper Kachura Lake boat safari",
+        "Sarfaranga & Katpana Cold Deserts (dune bashing)",
+        "Shigar Fort historic palace visit",
+        "Manthal Buddha Rock sculpture",
+        "Deosai National Park day excursion (seasonal)"
+      ]
+    },
+    {
+      "id": "naran",
+      "name": "Naran",
+      "region": "Khyber Pakhtunkhwa / Kaghan Valley",
+      "category": "Lakes & Nature",
+      "description": "Breathtaking Kaghan Valley hub with alpine meadows, roaring river Kunhar, and fairy-tale lakes.",
+      "room_capacity": 2,
+      "base_transport_cost": 5500,
+      "base_accommodation_cost": 6500,
+      "base_food_cost": 2200,
+      "base_activities_cost": 2000,
+      "transport_options": {
+        "Budget": "Shared Hiace Coaster (PKR 4,400)",
+        "Standard": "Private AC Saloon (PKR 5,500)",
+        "Premium": "4WD SUV Jeep Tour (PKR 9,900)"
+      },
+      "accommodation_options": {
+        "Budget": "Boutique Riverside Motel (PKR 4,550/night)",
+        "Standard": "3-Star Pine View Hotel (PKR 6,500/night)",
+        "Premium": "Luxury Riverfront Resort (PKR 13,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Lake Saif-ul-Malook 4x4 Jeep safari & boating",
+        "Babusar Top high mountain pass viewpoint",
+        "Lulusar Lake reflections & photography",
+        "Rafting in River Kunhar",
+        "Ansoo Lake trekking base (seasonal)"
+      ]
+    },
+    {
+      "id": "lahore",
+      "name": "Lahore",
+      "region": "Punjab",
+      "category": "Historical Places",
+      "description": "The cultural heart of Pakistan, famous for grand Mughal architecture, food, and gardens.",
+      "room_capacity": 2,
+      "base_transport_cost": 3000,
+      "base_accommodation_cost": 5500,
+      "base_food_cost": 2500,
+      "base_activities_cost": 1500,
+      "transport_options": {
+        "Budget": "Daewoo / Rail Economy (PKR 2,400)",
+        "Standard": "Green Line Express / AC Bus (PKR 3,000)",
+        "Premium": "Executive Business Class / Rental (PKR 5,400)"
+      },
+      "accommodation_options": {
+        "Budget": "Central Economy Hotel (PKR 3,850/night)",
+        "Standard": "3-Star Commercial Hub Hotel (PKR 5,500/night)",
+        "Premium": "5-Star Luxury Pearl Continental / Avari (PKR 11,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Badshahi Mosque & Lahore Fort (UNESCO site)",
+        "Shalimar Gardens Mughal landscaping",
+        "Wazir Khan Mosque intricate fresco artwork",
+        "Fort Road Food Street dinner & cultural show",
+        "Wagah Border flag lowering ceremony",
+        "Lahore Museum & Delhi Gate walking tour"
+      ]
+    },
+    {
+      "id": "islamabad",
+      "name": "Islamabad",
+      "region": "Federal Capital",
+      "category": "Historical Places",
+      "description": "Green capital city nestled at the foothills of Margalla Hills with modern monuments and nature.",
+      "room_capacity": 2,
+      "base_transport_cost": 2500,
+      "base_accommodation_cost": 6000,
+      "base_food_cost": 2500,
+      "base_activities_cost": 1500,
+      "transport_options": {
+        "Budget": "Metro / Shared Transit (PKR 2,000)",
+        "Standard": "AC Ride-hailing / Private Car (PKR 2,500)",
+        "Premium": "Chauffeured Luxury Sedan (PKR 4,500)"
+      },
+      "accommodation_options": {
+        "Budget": "Sector Guesthouse (PKR 4,200/night)",
+        "Standard": "3-Star City Hotel (PKR 6,000/night)",
+        "Premium": "Serena Hotel / Marriott Islamabad (PKR 12,000/night)"
+      },
+      "category_multipliers": {
+        "Budget": { "transport": 0.8, "accommodation": 0.7, "food": 0.8, "activities": 0.8 },
+        "Standard": { "transport": 1.0, "accommodation": 1.0, "food": 1.0, "activities": 1.0 },
+        "Premium": { "transport": 1.8, "accommodation": 2.0, "food": 1.5, "activities": 1.5 }
+      },
+      "attractions": [
+        "Faisal Mosque iconic architecture",
+        "Daman-e-Koh & Monal panoramic view from Margalla Hills",
+        "Pakistan Monument & Heritage Museum",
+        "Lok Virsa cultural heritage museum",
+        "Rawal Lake promenade & boating",
+        "Trail 3 / Trail 5 Margalla hiking"
+      ]
+    }
+  ]
+}
