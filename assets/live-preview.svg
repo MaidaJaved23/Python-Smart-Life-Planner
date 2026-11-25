@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 52" width="330" height="52" font-family="'Segoe UI',Arial,sans-serif">
+<style>@keyframes u{0%,100%{transform:scaleX(.55)}50%{transform:scaleX(1)}}@keyframes b{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}.u{transform-box:fill-box;transform-origin:left;animation:u 2.6s ease-in-out infinite}.l{animation:b 2.4s ease-in-out infinite}</style>
+<g class="l" transform="rotate(-45 24 25)" fill="none" stroke="#4493F8" stroke-width="3.6" stroke-linecap="round"><rect x="6" y="18" width="22" height="14" rx="7"/><rect x="20" y="18" width="22" height="14" rx="7"/></g>
+<text x="58" y="34" font-size="25" font-weight="800" fill="#4493F8">Open Live Preview</text>
+<rect class="u" x="58" y="40" width="258" height="3" rx="1.5" fill="#4493F8"/></svg>

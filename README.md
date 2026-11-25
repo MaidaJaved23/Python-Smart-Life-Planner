@@ -1,12 +1,19 @@
-# Smart Life Planner – Pakistan Trip Planner & Monthly Budget Manager
+<p align="center"><img src="assets/banner.svg" alt="Smart Life Planner banner" width="100%"/></p>
+<p align="center"><a href="https://maidajaved23.github.io/python-smart-life-planner/preview.html"><b>Open the live preview page</b></a> | <a href="https://github.com/MaidaJaved23">GitHub profile</a> | <a href="https://github.com/MaidaJaved23/python-smart-life-planner">Repository</a></p>
+<p align="center"><a href="https://github.com/MaidaJaved23/python-smart-life-planner"><img src="assets/star-button.svg" alt="Give it a star" height="48"/></a> <a href="https://github.com/MaidaJaved23"><img src="assets/profile-button.svg" alt="GitHub profile" height="48"/></a></p>
+<p align="center"><img src="assets/tagline.svg" alt="Plan trips. Beat the budget. Ship the PDF." width="100%"/></p>
+<p align="center"><img src="assets/badge-python.svg" alt="Python 3.10+" height="28"/> <img src="assets/badge-deps.svg" alt="Dependencies: reportlab, pytest" height="28"/> <img src="assets/badge-interface.svg" alt="Interface: Console Menu" height="28"/> <img src="assets/badge-tests.svg" alt="Tests: 104 checks passing" height="28"/> <img src="assets/badge-storage.svg" alt="Storage: JSON" height="28"/></p>
+<p align="center"><a href="https://maidajaved23.github.io/python-smart-life-planner/preview.html"><img src="assets/live-preview.svg" alt="Open Live Preview" height="48"/></a></p>
+
+## <img src="assets/icons/ico-title.svg" width="40" height="40" align="absmiddle" alt=""/> Smart Life Planner: Pakistan Trip Planner & Monthly Budget Manager
 
 An intelligent, production-ready terminal menu-driven Python application integrating two essential lifestyle modules:
 1. **Pakistan Trip Planner:** Plans and evaluates journeys across Pakistan with dynamic feasibility checking, multi-factor cost optimization, non-destructive parameter modification, and adaptive day-wise itineraries.
 2. **Monthly Budget Manager:** Tracks household and personal finances, monitors planned allocations vs. actual expenditures, detects category-wise and overall overspending, computes net savings rates, and exports professional multi-page PDF financial statements.
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## Table of Contents
+## <img src="assets/icons/ico-toc.svg" width="40" height="40" align="absmiddle" alt=""/> Table of Contents
 - [1. Project Overview & Problem Statement](#1-project-overview--problem-statement)
 - [2. Application Architecture & Folder Structure](#2-application-architecture--folder-structure)
 - [3. Module One: Pakistan Trip Planner](#3-module-one-pakistan-trip-planner)
@@ -27,10 +34,16 @@ An intelligent, production-ready terminal menu-driven Python application integra
 - [8. Automated Pytest Unit Testing](#8-automated-pytest-unit-testing)
 - [9. Developer Configuration](#9-developer-configuration)
 - [10. Sample Terminal Outputs](#10-sample-terminal-outputs)
+- [11. Final Submission Checklist](#11-final-submission-checklist)
+- [12. Visual Documentation](#12-visual-documentation)
+- [13. PDF Report Screenshots](#13-pdf-report-screenshots)
+- [14. Test Case Matrix](#14-test-case-matrix)
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 1. Project Overview & Problem Statement
+<a name="1-project-overview--problem-statement"></a>
+
+## <img src="assets/icons/ico-01.svg" width="40" height="40" align="absmiddle" alt=""/> 1. Project Overview & Problem Statement
 
 Travelers exploring Pakistan frequently encounter budget uncertainty due to unpredictable multi-city logistics, accommodation tiers, meal costs, and emergency buffers. Concurrently, households and individuals often struggle to monitor monthly finances across varied expense categories, leading to unintentional debt and missed savings targets.
 
@@ -40,9 +53,11 @@ Travelers exploring Pakistan frequently encounter budget uncertainty due to unpr
 - It delivers personal finance discipline by recording actual expenses against planned budgets, highlighting category-level overages, and maintaining an audit history.
 - After user confirmation, the system compiles publication-grade PDF reports via ReportLab with page-numbered footers displaying verified developer credentials.
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 2. Application Architecture & Folder Structure
+<a name="2-application-architecture--folder-structure"></a>
+
+## <img src="assets/icons/ico-02.svg" width="40" height="40" align="absmiddle" alt=""/> 2. Application Architecture & Folder Structure
 
 The project strictly follows modular separation of concerns:
 
@@ -95,9 +110,11 @@ python-smart-life-planner/
 └── README.md                   # Comprehensive documentation
 ```
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 3. Module One: Pakistan Trip Planner
+<a name="3-module-one-pakistan-trip-planner"></a>
+
+## <img src="assets/icons/ico-03.svg" width="40" height="40" align="absmiddle" alt=""/> 3. Module One: Pakistan Trip Planner
 
 ### 3.1 Calculation Formulas & Assumptions
 Costs in `data/destinations.json` reflect realistic seasonal averages across Murree, Nathiagali, Swat, Kalam, Hunza, Skardu, Naran, Lahore, and Islamabad.
@@ -148,9 +165,11 @@ Itineraries automatically adapt to the specific days and nights:
 - **Day Trips (0 Nights):** Early departure from departure city, scenic drive, morning tea, primary landmark visit, local lunch, afternoon exploration, scenic sunset viewpoint, and same-day return journey.
 - **Multi-Day Trips:** Day 1 includes departure, transit, hotel check-in, and welcome dinner; intermediate days feature authentic destination attractions (e.g., Attabad Lake, Malam Jabba, Saif-ul-Malook); final day features breakfast, check-out, souvenir shopping, and return transit.
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 4. Module Two: Monthly Budget Manager
+<a name="4-module-two-monthly-budget-manager"></a>
+
+## <img src="assets/icons/ico-04.svg" width="40" height="40" align="absmiddle" alt=""/> 4. Module Two: Monthly Budget Manager
 
 ### 4.1 Budget Types & Category Customization
 Users select between two pre-configured template profiles:
@@ -171,9 +190,11 @@ Users select between two pre-configured template profiles:
 - **Remaining Balance:** `Total Available - Total Actual`.
 - **Net Savings Rate:** $\left(\frac{\text{Remaining Balance}}{\text{Total Available}}\right) \times 100\%$.
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 5. Python Concepts & Advanced Standard Library
+<a name="5-python-concepts--advanced-standard-library"></a>
+
+## <img src="assets/icons/ico-05.svg" width="40" height="40" align="absmiddle" alt=""/> 5. Python Concepts & Advanced Standard Library
 
 ### 5.1 Object-Oriented Programming (OOP) Classes
 
@@ -208,9 +229,11 @@ The application leverages four distinct structures from Python's standard `colle
 4. **`deque` (`services/trip_planner.py`, `services/budget_manager.py`):**
    - Implements bounded-size audit history logs (`maxlen=25` and `maxlen=30`) tracking modifications, state changes, and rollbacks for accountability.
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 6. PDF Report Generation
+<a name="6-pdf-report-generation"></a>
+
+## <img src="assets/icons/ico-06.svg" width="40" height="40" align="absmiddle" alt=""/> 6. PDF Report Generation
 
 PDF reports are compiled using Python's **ReportLab** library and adhere to strict formatting standards:
 - **Confirmation Gate:** PDF compilation is only allowed *after* the user reviews and confirms the final trip plan or monthly budget. Unconfirmed plans raise an explicit error.
@@ -220,9 +243,11 @@ PDF reports are compiled using Python's **ReportLab** library and adhere to stri
   ```
 - **Collisions & Overwrites:** Filenames use timestamps and auto-incrementing counters (`trip_report_<trip_id>_<timestamp>.pdf`), preventing report overwriting.
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 7. Installation & Execution
+<a name="7-installation--execution"></a>
+
+## <img src="assets/icons/ico-07.svg" width="40" height="40" align="absmiddle" alt=""/> 7. Installation & Execution
 
 ### Prerequisites
 - Python 3.10 or higher (Python 3.14+ fully supported).
@@ -244,9 +269,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 8. Automated Pytest Unit Testing
+<a name="8-automated-pytest-unit-testing"></a>
+
+## <img src="assets/icons/ico-08.svg" width="40" height="40" align="absmiddle" alt=""/> 8. Automated Pytest Unit Testing
 
 The project includes an automated test suite comprising **104 test cases** with 100% pass rate covering calculations, edge cases, boundaries, validations, persistence, and PDF creation.
 
@@ -286,9 +313,11 @@ tests/test_validators.py .............................................. [100%]
 ============================= 104 passed in 1.49s =============================
 ```
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 9. Developer Configuration
+<a name="9-developer-configuration"></a>
+
+## <img src="assets/icons/ico-09.svg" width="40" height="40" align="absmiddle" alt=""/> 9. Developer Configuration
 
 Developer information is loaded from `config/developer.json` and rendered in the footer of every generated PDF page:
 
@@ -302,9 +331,11 @@ Developer information is loaded from `config/developer.json` and rendered in the
 
 Students can update this directly in `config/developer.json` or interactively via **Option 4: Developer Information** in the main menu.
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 10. Sample Terminal Outputs
+<a name="10-sample-terminal-outputs"></a>
+
+## <img src="assets/icons/ico-10.svg" width="40" height="40" align="absmiddle" alt=""/> 10. Sample Terminal Outputs
 
 ### Sample 1: Trip Plan Summary (Standard Category, Within Budget)
 ```text
@@ -380,9 +411,11 @@ WARNING: OVERSPENT CATEGORIES DETECTED:
 ==================================================================================
 ```
 
----
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
-## 11. Final Submission Checklist
+<a name="11-final-submission-checklist"></a>
+
+## <img src="assets/icons/ico-11.svg" width="40" height="40" align="absmiddle" alt=""/> 11. Final Submission Checklist
 
 - [x] **Pakistan Trip Planner Module:** All inputs validated; room capacity ceiling division; zero-night trips handled with PKR 0.00 accommodation; dynamic tier multipliers (Budget, Standard, Premium); emergency allowance calculated; day-wise itinerary generated.
 - [x] **Trip Feasibility & Optimization:** Within Budget, Exactly Budget, and Over Budget classified; diagnostic shortage driver analysis; 6 optimization dimensions calculated; strictly verified affordable alternatives ranked.
@@ -394,5 +427,80 @@ WARNING: OVERSPENT CATEGORIES DETECTED:
 - [x] **Automated Pytest Suite:** 104 comprehensive unit and boundary tests implemented and passing.
 - [x] **Version Control:** Clean repository structure, `.gitignore`, `requirements.txt`, and meaningful git commit history.
 
----
-*Developed with Python for the PSEB / DeepMind Assignment: Smart Life Planner.*
+<a name="12-visual-documentation"></a>
+
+## <img src="assets/icons/ico-12.svg" width="40" height="40" align="absmiddle" alt=""/> 12. Visual Documentation
+
+Every graphic is an animated, resolution-independent SVG. See them all in the [live preview](https://maidajaved23.github.io/python-smart-life-planner/preview.html).
+
+### Manual planning vs Smart Life Planner
+<p align="center"><img src="assets/compare.svg" alt="Comparison" width="100%"/></p>
+
+### Module overview
+<p align="center"><img src="assets/modules.svg" alt="Modules" width="100%"/></p>
+
+### Charts
+<p align="center"><img src="assets/cost-chart.svg" alt="Cost chart" width="100%"/></p>
+
+<p align="center"><img src="assets/cost-donut.svg" alt="Cost donut" width="100%"/></p>
+
+<p align="center"><img src="assets/budget-chart.svg" alt="Budget chart" width="100%"/></p>
+
+<p align="center"><img src="assets/tests-chart.svg" alt="Tests chart" width="100%"/></p>
+
+### Architecture design
+<p align="center"><img src="assets/architecture.svg" alt="Architecture" width="100%"/></p>
+
+### Entity relationship diagram (ERD)
+<p align="center"><img src="assets/erd.svg" alt="ERD" width="100%"/></p>
+
+### UML class diagram
+<p align="center"><img src="assets/uml-class.svg" alt="UML" width="100%"/></p>
+
+### System design flow
+<p align="center"><img src="assets/system-flow.svg" alt="System flow" width="100%"/></p>
+
+
+<a name="13-pdf-report-screenshots"></a>
+
+## <img src="assets/icons/ico-13.svg" width="40" height="40" align="absmiddle" alt=""/> 13. PDF Report Screenshots
+
+Generated by `pdf/pdf_generator.py` from sample data (Murree trip and November budget). Page 1 of each report:
+
+<table><tr><td align="center"><b>Trip plan report</b><br/><img src="assets/pdf-trip.png" width="100%"/></td><td align="center"><b>Monthly budget report</b><br/><img src="assets/pdf-budget.png" width="100%"/></td></tr></table>
+
+<a name="14-test-case-matrix"></a>
+
+## <img src="assets/icons/ico-14.svg" width="40" height="40" align="absmiddle" alt=""/> 14. Test Case Matrix
+
+Run `pytest -v`. The suite has **104 test cases** and all pass. A selection of the key cases:
+
+| # | Test file | Scenario | Expected result | Status |
+|---|---|---|---|---|
+| TC-01 | `test_trip_calculator.py` | 3 travellers, room capacity 2 | Rooms = 2 (ceiling division) | Pass |
+| TC-02 | `test_trip_calculator.py` | Nights = 0 | Accommodation = PKR 0.00 | Pass |
+| TC-03 | `test_trip_calculator.py` | Base subtotal PKR 34,000 | Emergency allowance = 5% = PKR 1,700 | Pass |
+| TC-04 | `test_feasibility_checker.py` | Cost equals budget | Status: exactly within budget | Pass |
+| TC-05 | `test_feasibility_checker.py` | Budget short by PKR 1 | Status: over budget, shortage PKR 1 | Pass |
+| TC-06 | `test_feasibility_checker.py` | Budget above cost by PKR 1 | Status: within budget | Pass |
+| TC-07 | `test_trip_optimizer.py` | Every generated alternative | Re-costed as affordable (0 false positives) | Pass |
+| TC-08 | `test_trip_planner.py` | Modify a plan, then cancel | Original plan stays unchanged | Pass |
+| TC-09 | `test_trip_planner.py` | Confirm a plan | Persisted to trips JSON | Pass |
+| TC-10 | `test_budget_manager.py` | Zero or negative budget | Rejected with a clear error | Pass |
+| TC-11 | `test_budget_manager.py` | Duplicate category name | Rejected | Pass |
+| TC-12 | `test_budget_manager.py` | Electricity actual 26,000 vs planned 20,000 | Flagged as overspent by PKR 6,000 | Pass |
+| TC-13 | `test_validators.py` | Nights greater than days | Rejected | Pass |
+| TC-14 | `test_validators.py` | Invalid email or date | Rejected with message | Pass |
+| TC-15 | `test_data_manager.py` | Corrupted JSON file | Recovered, no crash | Pass |
+| TC-16 | `test_data_manager.py` | Missing data directory | Created automatically | Pass |
+| TC-17 | `test_pdf_generator.py` | Unconfirmed trip | ValueError, no PDF written | Pass |
+| TC-18 | `test_pdf_generator.py` | Two PDFs in the same second | Unique filenames, no overwrite | Pass |
+| TC-19 | `test_report_generator.py` | Ranked alternatives table | Sorted best score first | Pass |
+
+<p align="center"><img src="assets/tests-chart.svg" alt="Tests per file" width="100%"/></p>
+
+<p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
+
+<p align="center"><img src="assets/footer.svg" alt="Smart Life Planner. Instructor: Muhammad Waleed Shehbaz. Author: Maida Javed" width="100%"/></p>
+<p align="center"><a href="https://github.com/MaidaJaved23"><img src="assets/btn-author.svg" alt="Author: Maida Javed" width="380"/></a> <a href="https://github.com/MaidaJaved23/python-smart-life-planner"><img src="assets/btn-github.svg" alt="GitHub: View the repository" width="380"/></a></p>
+<p align="center"><a href="https://github.com/MaidaJaved23/python-smart-life-planner"><img src="assets/btn-star.svg" alt="Give me a star: Support this project" width="380"/></a></p>

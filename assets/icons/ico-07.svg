@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="72" height="72">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFC857"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
+<linearGradient id="gs" gradientUnits="userSpaceOnUse" x1="14" y1="14" x2="58" y2="58"><stop offset="0" stop-color="#FFC857"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
+<linearGradient id="f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E1632"/><stop offset="1" stop-color="#1B2350"/></linearGradient>
+<filter id="g" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<style>@keyframes p{0%,100%{opacity:.5}50%{opacity:1}}@keyframes d{to{stroke-dashoffset:-233}}@keyframes s{0%,100%{transform:scale(.6);opacity:.2}50%{transform:scale(1.2);opacity:1}}.p{animation:p 2.6s ease-in-out infinite}.d{stroke-dasharray:34 199;animation:d 3.2s linear infinite}.s{transform-box:fill-box;transform-origin:center;animation:s 2.4s ease-in-out infinite}</style>
+<rect x="3" y="3" width="66" height="66" rx="18" fill="url(#f)"/>
+<rect x="3" y="3" width="66" height="66" rx="18" fill="url(#b)" opacity=".16" class="p"/>
+<rect x="3" y="3" width="66" height="66" rx="18" fill="none" stroke="url(#b)" stroke-width="2" stroke-opacity=".7"/>
+<rect x="3" y="3" width="66" height="66" rx="18" fill="none" stroke="url(#b)" stroke-width="3.2" class="d" filter="url(#g)"/>
+<g fill="none" stroke="url(#gs)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#g)"><path d="M36 17v26"/><path d="M25 33l11 11 11-11"/><path d="M19 54h34"/></g>
+<circle class="s" cx="57" cy="15" r="2.2" fill="#FFC857"/>
+</svg>

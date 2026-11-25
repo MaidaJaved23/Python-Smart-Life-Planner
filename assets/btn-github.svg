@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 92" width="380" height="92" font-family="'Segoe UI',Arial,sans-serif">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#4F8CFF"/><stop offset="1" stop-color="#9B7BFF"/></linearGradient>
+<linearGradient id="bgf" x1="0" x2="1"><stop offset="0" stop-color="#4F8CFF" stop-opacity=".30"/><stop offset="1" stop-color="#9B7BFF" stop-opacity=".12"/></linearGradient>
+<clipPath id="c"><rect x="3" y="3" width="374" height="86" rx="42"/></clipPath>
+<filter id="gl" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<style>@keyframes d{to{stroke-dashoffset:-1000}}@keyframes sh{from{transform:translateX(-140px) skewX(-20deg)}to{transform:translateX(520px) skewX(-20deg)}}@keyframes ar{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}@keyframes pu{0%,100%{opacity:.5}50%{opacity:1}}
+.o{stroke-dasharray:120 780;animation:d 3.4s linear infinite}.s{animation:sh 3.6s ease-in-out infinite}.a{animation:ar 1.6s ease-in-out infinite}.p{animation:pu 2.4s ease-in-out infinite}</style>
+<rect x="3" y="3" width="374" height="86" rx="42" fill="#0B1230"/>
+<rect x="3" y="3" width="374" height="86" rx="42" fill="url(#bgf)"/>
+<rect x="3" y="3" width="374" height="86" rx="42" fill="none" stroke="url(#g)" stroke-width="2.4" stroke-opacity=".85"/>
+<rect x="3" y="3" width="374" height="86" rx="42" fill="none" stroke="#fff" stroke-width="3.4" class="o" filter="url(#gl)" opacity=".9"/>
+<g clip-path="url(#c)"><rect class="s" y="0" width="46" height="92" fill="#fff" opacity=".13"/></g>
+<circle cx="50" cy="46" r="31" fill="url(#g)" opacity=".28" class="p"/>
+<circle cx="50" cy="46" r="27" fill="url(#g)"/>
+<circle cx="50" cy="46" r="27" fill="none" stroke="#fff" stroke-opacity=".35"/>
+<g fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="42" cy="36" r="4.2"/><circle cx="42" cy="58" r="4.2"/><circle cx="60" cy="40" r="4.2"/><path d="M42 40V54M60 44c0 6-6 7-14 10" /></g>
+<text x="96" y="43" font-size="27" font-weight="800" fill="#FFFFFF">GitHub</text>
+<text x="96" y="67" font-size="16" fill="#C9D3F5">View the repository</text>
+<path class="a" d="M335 32L351 46L335 60" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

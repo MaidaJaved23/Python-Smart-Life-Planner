@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 56" width="1000" height="56">
+<defs><clipPath id="c"><rect x="0" y="0" width="0" height="56"><animate attributeName="width" values="0;760;760;0" keyTimes="0;.55;.9;1" dur="7s" repeatCount="indefinite"/></rect></clipPath>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".6" stop-color="#2DF5A8"/><stop offset="1" stop-color="#FFC857"/></linearGradient></defs>
+<g clip-path="url(#c)"><text x="500" y="36" font-size="26" font-weight="700" text-anchor="middle" fill="url(#g)" font-family="Consolas,'Courier New',monospace" transform="translate(0 0)">Plan trips. Beat the budget. Ship the PDF.</text></g>
+<rect y="10" width="3" height="34" fill="#22D3EE"><animate attributeName="x" values="109;651;651;109" keyTimes="0;.55;.9;1" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+</svg>

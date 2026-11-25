@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" font-family="Segoe UI,Arial,sans-serif">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070B1A"/><stop offset="1" stop-color="#151B3D"/></linearGradient>
+<linearGradient id="gt" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#9B7BFF"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
+<linearGradient id="gc" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#9B7BFF"/></linearGradient>
+<linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#2DF5A8"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+<linearGradient id="ga" x1="0" x2="1"><stop offset="0" stop-color="#FFC857"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
+<linearGradient id="gp" x1="0" x2="1"><stop offset="0" stop-color="#FF4D8D"/><stop offset="1" stop-color="#9B7BFF"/></linearGradient>
+<linearGradient id="gv" x1="0" x2="1"><stop offset="0" stop-color="#9B7BFF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+<linearGradient id="gcv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#9B7BFF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+<linearGradient id="ggv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DF5A8"/></linearGradient>
+<linearGradient id="gpv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#9B7BFF"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#22D3EE" stroke-opacity=".07"/></pattern>
+<filter id="gl" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="bl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+</defs>
+<style>
+.r{opacity:0;animation:rise .8s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes dash{to{stroke-dashoffset:-48}}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes pls{0%,100%{opacity:.45}50%{opacity:1}}
+@keyframes scan{from{transform:translateY(-4px)}to{transform:translateY(370px)}}
+@keyframes gxl{0%{transform:scaleX(0)}12%{transform:scaleX(1)}90%{transform:scaleX(1)}97%,100%{transform:scaleX(0)}}
+@keyframes gyl{0%{transform:scaleY(0)}12%{transform:scaleY(1)}90%{transform:scaleY(1)}97%,100%{transform:scaleY(0)}}
+@keyframes lbl{0%,10%{opacity:0}16%,88%{opacity:1}95%,100%{opacity:0}}
+@keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.18)}100%{transform:scale(1)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.fl{animation:flt 5s ease-in-out infinite}
+.pl{animation:pls 2.4s ease-in-out infinite}
+.dash{stroke-dasharray:8 8;animation:dash 1.4s linear infinite}
+.scan{animation:scan 7s linear infinite}
+.bx{transform-box:fill-box;transform-origin:left center;animation:gxl 9s cubic-bezier(.2,.8,.2,1) infinite}
+.by{transform-box:fill-box;transform-origin:center bottom;animation:gyl 9s cubic-bezier(.2,.8,.2,1) infinite}
+.lb{animation:lbl 9s ease infinite}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .6s ease both}
+.bl{animation:blink 1s steps(2) infinite}
+.sp{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite}
+</style>
+<rect width="100%" height="100%" rx="22" fill="url(#bg)"/>
+<rect width="100%" height="100%" rx="22" fill="url(#grid)"/>
+<circle cx="256" cy="49" r="2" fill="#22D3EE" opacity=".55" class="fl" style="animation-delay:-4.10s;animation-duration:4.5s"/><circle cx="1044" cy="314" r="2" fill="#2DF5A8" opacity=".55" class="fl" style="animation-delay:-4.40s;animation-duration:5.1s"/><circle cx="503" cy="136" r="2" fill="#2DF5A8" opacity=".55" class="fl" style="animation-delay:-3.00s;animation-duration:7.6s"/><circle cx="119" cy="253" r="2.5" fill="#9B7BFF" opacity=".55" class="fl" style="animation-delay:-2.78s;animation-duration:7.6s"/><circle cx="33" cy="94" r="3" fill="#9B7BFF" opacity=".55" class="fl" style="animation-delay:-0.90s;animation-duration:5.9s"/><circle cx="363" cy="153" r="2" fill="#FF4D8D" opacity=".55" class="fl" style="animation-delay:-3.50s;animation-duration:4.9s"/><circle cx="834" cy="195" r="2" fill="#9B7BFF" opacity=".55" class="fl" style="animation-delay:-4.48s;animation-duration:5.4s"/><circle cx="240" cy="144" r="1.5" fill="#2DF5A8" opacity=".55" class="fl" style="animation-delay:-4.79s;animation-duration:4.8s"/><circle cx="1008" cy="147" r="3" fill="#2DF5A8" opacity=".55" class="fl" style="animation-delay:-4.15s;animation-duration:7.1s"/><circle cx="575" cy="190" r="2" fill="#9B7BFF" opacity=".55" class="fl" style="animation-delay:-3.47s;animation-duration:5.6s"/><circle cx="1060" cy="129" r="1.5" fill="#FF4D8D" opacity=".55" class="fl" style="animation-delay:-1.85s;animation-duration:6.5s"/><circle cx="742" cy="73" r="1.5" fill="#2DF5A8" opacity=".55" class="fl" style="animation-delay:-3.21s;animation-duration:5.1s"/><circle cx="1006" cy="78" r="2" fill="#22D3EE" opacity=".55" class="fl" style="animation-delay:-2.56s;animation-duration:7.8s"/><circle cx="199" cy="138" r="3" fill="#2DF5A8" opacity=".55" class="fl" style="animation-delay:-4.99s;animation-duration:7.9s"/>
+<circle cx="600" cy="175" r="150" fill="#6D4BFF" opacity=".30" filter="url(#bl)"/><circle cx="600" cy="175" r="142" fill="#6D4BFF" opacity=".14"/><ellipse cx="600" cy="185" rx="520" ry="108" fill="none" stroke="#22D3EE" stroke-opacity=".45" stroke-width="1.6" class="dash"/><ellipse cx="600" cy="185" rx="470" ry="86" fill="none" stroke="#FF4D8D" stroke-opacity=".25" stroke-width="1.2" stroke-dasharray="3 9"/><text x="600" y="72" font-size="17" font-weight="700" fill="#8FA3E8" text-anchor="middle" letter-spacing="7" class="r" style="animation-delay:0.1s">BUILT WITH PYTHON</text><text x="600" y="152" font-size="68" font-weight="800" text-anchor="middle" fill="url(#gt)" class="r" style="animation-delay:.3s">Smart Life Planner</text><text x="600" y="208" font-size="31" font-weight="600" fill="#E8EEFF" text-anchor="middle" class="r" style="animation-delay:0.6s">Instructor: Muhammad Waleed Shehbaz</text><text x="600" y="254" font-size="31" font-weight="600" fill="#E8EEFF" text-anchor="middle" class="r" style="animation-delay:0.8s">Author: Maida Javed</text><line x1="360" y1="290" x2="840" y2="290" stroke="#FF4D8D" stroke-width="3.5" stroke-linecap="round" class="dash"/><text x="600" y="335" font-size="17" font-weight="400" fill="#8FA3E8" text-anchor="middle" class="r" style="animation-delay:1.1s">python-smart-life-planner  ·  Python 3.10+  ·  ReportLab  ·  Pytest</text>
+<rect class="scan" x="0" y="0" width="1200" height="2" fill="#22D3EE" opacity=".14"/>
+<rect x="1" y="1" width="1198" height="368" rx="21" fill="none" stroke="#22D3EE" stroke-opacity=".25"/>
+</svg>

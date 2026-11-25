@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Smart Life Planner | Pakistan Trip Planner and Monthly Budget Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070B1A;--bg2:#0C1330;--pn:#0E1632;--tx:#E8EEFF;--mu:#8A96C0;--cy:#22D3EE;--gr:#2DF5A8;--pk:#FF4D8D;--vi:#9B7BFF;--am:#FFC857;--ln:rgba(34,211,238,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.65 "Space Grotesk",Segoe UI,Arial,sans-serif;overflow-x:hidden}
+code,pre,.mono{font-family:"JetBrains Mono",Consolas,monospace}
+/* backdrop */
+.aur{position:fixed;inset:0;z-index:-2;overflow:hidden;background:radial-gradient(1200px 700px at 50% -10%,#14204a 0,var(--bg) 60%)}
+.aur i{position:absolute;width:46vmax;height:46vmax;border-radius:50%;filter:blur(90px);opacity:.28;animation:drift 22s ease-in-out infinite alternate}
+.aur i:nth-child(1){background:var(--cy);left:-12vmax;top:-10vmax}
+.aur i:nth-child(2){background:var(--pk);right:-14vmax;top:30vh;animation-duration:28s;animation-delay:-8s}
+.aur i:nth-child(3){background:var(--vi);left:25vw;bottom:-22vmax;animation-duration:32s;animation-delay:-14s}
+@keyframes drift{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+.grid{position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(34,211,238,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.06) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 20%,transparent 75%)}
+.glow{position:fixed;z-index:-1;width:420px;height:420px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 65%);transform:translate(-50%,-50%);left:50%;top:30%;transition:left .25s ease-out,top .25s ease-out}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;z-index:20;background:linear-gradient(90deg,var(--cy),var(--vi),var(--pk));box-shadow:0 0 12px var(--cy)}
+/* nav */
+nav{position:sticky;top:0;z-index:10;display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:12px 4vw;background:rgba(7,11,26,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--ln)}
+nav b{font:700 20px "JetBrains Mono",monospace;margin-right:auto;letter-spacing:-.5px;background:linear-gradient(90deg,var(--cy),var(--vi),var(--pk));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav b::before{content:"[";color:var(--cy);-webkit-text-fill-color:var(--cy)}nav b::after{content:"]";color:var(--pk);-webkit-text-fill-color:var(--pk)}
+nav a{position:relative;color:var(--mu);text-decoration:none;font:700 13px "JetBrains Mono",monospace;padding:8px 14px;border-radius:99px;text-transform:uppercase;letter-spacing:.08em;transition:.25s}
+nav a::after{content:"";position:absolute;left:14px;right:14px;bottom:3px;height:2px;background:linear-gradient(90deg,var(--cy),var(--pk));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav a:hover,nav a.on{color:var(--tx)}nav a:hover::after,nav a.on::after{transform:scaleX(1)}
+main{max-width:1240px;margin:auto;padding:0 4vw}
+section{padding:70px 0 6px}
+h2{font:700 clamp(30px,4.6vw,46px)/1.1 "Space Grotesk",sans-serif;margin:0 0 26px;letter-spacing:-.02em;display:flex;align-items:center;gap:14px}
+h2::before{content:"//";font:700 .6em "JetBrains Mono",monospace;color:var(--pk);text-shadow:0 0 14px var(--pk)}
+h2::after{content:"";flex:1;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--cy),transparent);opacity:.6}
+/* hero */
+.hero{padding-top:34px}
+.hero .shot{position:relative;border-radius:26px;padding:2px;background:linear-gradient(120deg,var(--cy),var(--vi),var(--pk),var(--cy));background-size:300% 300%;animation:flow 8s linear infinite;box-shadow:0 0 60px rgba(34,211,238,.18)}
+@keyframes flow{to{background-position:300% 0}}
+.hero .shot img{width:100%;display:block;border-radius:24px}
+.tag{margin:26px 0 0;font:700 clamp(15px,2.2vw,22px) "JetBrains Mono",monospace;color:var(--gr);min-height:1.6em}
+.tag::after{content:"";display:inline-block;width:10px;height:1.05em;margin-left:4px;vertical-align:-.15em;background:var(--cy);animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.lead{max-width:62ch;color:var(--mu);font-size:19px;margin:12px 0 22px}
+.btns{display:flex;gap:16px;flex-wrap:wrap}.btns img{height:52px;display:block;transition:transform .25s,filter .25s}.btns a:hover img{transform:translateY(-4px) scale(1.03);filter:drop-shadow(0 8px 18px rgba(34,211,238,.45))}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.stats div{position:relative;overflow:hidden;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));border:1px solid var(--c);border-radius:20px;padding:20px 22px;box-shadow:0 0 0 1px rgba(255,255,255,.02) inset,0 12px 40px -18px var(--c);transition:transform .3s,box-shadow .3s}
+.stats div::before{content:"";position:absolute;inset:-1px;background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.14) 50%,transparent 65%);transform:translateX(-120%);animation:sheen 4.5s ease-in-out infinite}
+.stats div:nth-child(2)::before{animation-delay:.6s}.stats div:nth-child(3)::before{animation-delay:1.2s}.stats div:nth-child(4)::before{animation-delay:1.8s}
+@keyframes sheen{60%,100%{transform:translateX(120%)}}
+.stats div:hover{transform:translateY(-6px);box-shadow:0 18px 50px -14px var(--c)}
+.stats div:nth-child(1){--c:var(--gr)}.stats div:nth-child(2){--c:var(--am)}.stats div:nth-child(3){--c:var(--cy)}.stats div:nth-child(4){--c:var(--pk)}
+.stats strong{display:block;font:700 54px/1.1 "Space Grotesk",sans-serif;color:var(--c);text-shadow:0 0 24px var(--c)}
+.stats span{font:700 12px "JetBrains Mono",monospace;color:var(--mu);text-transform:uppercase;letter-spacing:.1em}
+/* modules */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:22px}
+.box{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));border:1px solid var(--c);border-radius:24px;padding:26px 28px;overflow:hidden;box-shadow:0 20px 60px -30px var(--c)}
+.box::before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--c);box-shadow:0 0 18px var(--c)}
+.box h3{margin:0 0 8px;font:700 26px "Space Grotesk",sans-serif;color:var(--c)}.box p{margin:0;color:#C9D3F5}
+.box.v{--c:var(--vi)}.box.g{--c:var(--gr)}
+pre{position:relative;margin:22px 0 0;background:#050816;border:1px solid var(--ln);border-radius:18px;padding:22px 22px 22px 26px;overflow-x:auto;font-size:15px;color:#BFE9FF;box-shadow:0 0 40px -18px var(--cy)}
+pre::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:3px;background:linear-gradient(var(--cy),var(--pk));animation:pls 2.4s ease-in-out infinite}
+@keyframes pls{50%{opacity:.35}}
+/* cards */
+.mas{column-width:520px;column-gap:24px}
+.card{break-inside:avoid;margin:0 0 24px;background:rgba(14,22,50,.7);border:1px solid var(--ln);border-radius:22px;padding:12px;transition:border-color .3s,box-shadow .3s;transform-style:preserve-3d;will-change:transform;position:relative}
+.card:hover{border-color:var(--cy);box-shadow:0 0 0 1px var(--cy),0 24px 60px -24px rgba(34,211,238,.55)}
+.card img{width:100%;display:block;border-radius:14px;cursor:zoom-in}
+.pdfs .card img{cursor:zoom-in;border:1px solid rgba(255,255,255,.1)}
+figcaption{display:flex;align-items:center;gap:10px;font:700 13px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--mu);padding:12px 6px 4px}
+figcaption::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gr);box-shadow:0 0 10px var(--gr);animation:pls 2s ease-in-out infinite}
+.pdfs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px}
+.note{color:var(--mu);margin:-8px 0 22px}
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--ln);border-radius:20px;background:rgba(12,19,48,.7);box-shadow:0 0 50px -28px var(--cy)}
+table{width:100%;border-collapse:collapse}td,th{padding:12px 16px;text-align:left;border-bottom:1px solid rgba(138,150,192,.14);font-size:15px}
+th{font:700 12px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--cy);background:rgba(34,211,238,.07);position:sticky;top:0}
+tbody tr,.tw table tr{transition:background .25s}.tw tr:hover td{background:rgba(155,123,255,.09)}
+td code{color:var(--am);font-size:13px}
+.b{display:inline-block;padding:3px 13px;border-radius:99px;font:700 12px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
+.ok{color:var(--gr);background:rgba(45,245,168,.12);border:1px solid rgba(45,245,168,.55);box-shadow:0 0 14px -4px var(--gr)}
+.w{color:var(--am);background:rgba(255,200,87,.12);border:1px solid rgba(255,200,87,.6);animation:warn 1.8s ease-in-out infinite}
+@keyframes warn{50%{box-shadow:0 0 16px 0 rgba(255,200,87,.55)}}
+tr.rv{opacity:0;transform:translateX(-18px);transition:opacity .5s,transform .5s}tr.rv.in{opacity:1;transform:none}
+/* footer */
+footer{margin-top:90px;text-align:center;padding-bottom:50px}footer .fw{width:100%;display:block;border-radius:22px}
+footer p{color:var(--mu)}footer a{color:var(--cy);font-weight:700;text-decoration:none;border-bottom:1px dashed var(--cy)}footer a:hover{color:var(--gr)}
+.div{display:block;width:100%;height:24px;margin:34px 0 0}
+.fb{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:18px}.fb a{border:0}.fb img{height:84px;display:block;transition:transform .25s,filter .25s}.fb a:hover img{transform:translateY(-4px) scale(1.03);filter:drop-shadow(0 10px 22px rgba(34,211,238,.45))}
+/* reveal */
+.rv2{opacity:0;transform:translateY(34px) scale(.98);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.rv2.in{opacity:1;transform:none}
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;background:rgba(3,5,14,.88);backdrop-filter:blur(8px);padding:4vw;cursor:zoom-out;animation:fadeIn .25s}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:92vh;border-radius:16px;border:1px solid var(--cy);box-shadow:0 0 80px rgba(34,211,238,.35);animation:zoom .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes fadeIn{from{opacity:0}}@keyframes zoom{from{transform:scale(.9);opacity:0}}
+:focus-visible{outline:3px solid var(--pk);outline-offset:3px}
+@media(max-width:700px){nav a{padding:6px 9px;font-size:11px}.stats strong{font-size:44px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv2,tr.rv{opacity:1;transform:none}}
+</style></head><body>
+<div class="aur"><i></i><i></i><i></i></div><div class="grid"></div><div class="glow" id="glow"></div><div id="bar"></div>
+<nav><b>Smart Life Planner</b><a href="#modules">Modules</a><a href="#visuals">Diagrams</a><a href="#charts">Charts</a><a href="#pdf">PDF</a><a href="#tests">Tests</a><a href="#audit">Audit</a></nav>
+<main><header class="hero"><div class="shot"><img src="assets/banner.svg" alt="Smart Life Planner banner"></div><div class="tag" id="tag" aria-hidden="true"></div><p class="lead">A terminal Python app that plans trips across Pakistan, tells you whether they fit your budget, and tracks a monthly household or personal budget with PDF reports.</p><div class="btns"><a href="https://github.com/MaidaJaved23/python-smart-life-planner"><img src="assets/star-button.svg" alt="Give it a star"></a><a href="https://github.com/MaidaJaved23"><img src="assets/profile-button.svg" alt="GitHub profile"></a></div></header>
+<section><div class="stats"><div class="rv2"><strong data-n="2">2</strong><span>modules in one CLI</span></div><div class="rv2" style="--d:.1s"><strong data-n="9" data-s="+">9+</strong><span>Pakistan destinations</span></div><div class="rv2" style="--d:.2s"><strong data-n="104">104</strong><span>Pytest tests passing</span></div><div class="rv2" style="--d:.3s"><strong data-n="6">6</strong><span>optimizer dimensions</span></div></div></section>
+<section id="modules"><h2 class="rv2">Two modules</h2><div class="two"><div class="box v rv2"><h3>Pakistan Trip Planner</h3><p>Costs a trip by travellers, rooms, days and tier, adds a 5% emergency buffer and classifies it as within, exactly within or over budget. Over budget? The optimizer offers only options it re-costed as affordable. Cancelling a modification keeps the original plan.</p></div><div class="box g rv2" style="--d:.15s"><h3>Monthly Budget Manager</h3><p>Home and Kitchen or Personal Finance templates with custom categories. Records expenses, flags category and overall overspending, reports the net savings rate and exports a PDF once you confirm.</p></div></div><pre class="rv2">Rooms         = ceil(Travellers / Room capacity)
+Accommodation = Base room x Tier x Rooms x Nights   (0 when Nights = 0)
+Total         = (Transport + Accommodation + Food + Activities) x 1.05
+Savings rate  = (Available - Actual) / Available x 100%</pre></section>
+<section id="visuals"><h2 class="rv2">Diagrams</h2><div class="mas"><figure class="card rv2"><img src="assets/compare.svg" alt="Manual planning vs Smart Life Planner" loading="lazy"><figcaption>Manual planning vs Smart Life Planner</figcaption></figure><figure class="card rv2"><img src="assets/modules.svg" alt="Module overview" loading="lazy"><figcaption>Module overview</figcaption></figure><figure class="card rv2"><img src="assets/architecture.svg" alt="Architecture design" loading="lazy"><figcaption>Architecture design</figcaption></figure><figure class="card rv2"><img src="assets/erd.svg" alt="Entity relationship diagram" loading="lazy"><figcaption>Entity relationship diagram</figcaption></figure><figure class="card rv2"><img src="assets/uml-class.svg" alt="UML class diagram" loading="lazy"><figcaption>UML class diagram</figcaption></figure><figure class="card rv2"><img src="assets/system-flow.svg" alt="System design flow" loading="lazy"><figcaption>System design flow</figcaption></figure></div></section>
+<section id="charts"><h2 class="rv2">Charts</h2><div class="mas"><figure class="card rv2"><img src="assets/cost-chart.svg" alt="Murree trip cost breakdown" loading="lazy"><figcaption>Murree trip cost breakdown</figcaption></figure><figure class="card rv2"><img src="assets/cost-donut.svg" alt="Cost share" loading="lazy"><figcaption>Cost share</figcaption></figure><figure class="card rv2"><img src="assets/budget-chart.svg" alt="Planned vs actual budget" loading="lazy"><figcaption>Planned vs actual budget</figcaption></figure><figure class="card rv2"><img src="assets/tests-chart.svg" alt="Tests per file" loading="lazy"><figcaption>Tests per file</figcaption></figure></div></section>
+<section id="pdf"><h2 class="rv2">PDF report screenshots</h2><p class="note">Page 1 of each report, generated by pdf_generator.py from sample data.</p><div class="pdfs"><figure class="card rv2"><img src="assets/pdf-trip.png" alt="Trip plan PDF" loading="lazy"><figcaption>Trip plan report</figcaption></figure><figure class="card rv2" style="--d:.15s"><img src="assets/pdf-budget.png" alt="Budget PDF" loading="lazy"><figcaption>Monthly budget report</figcaption></figure></div></section>
+<section id="tests"><h2 class="rv2">Test case matrix</h2><div class="tw rv2"><table><tr><th>#</th><th>File</th><th>Scenario</th><th>Expected</th><th>Status</th></tr><tr><td>TC-01</td><td><code>test_trip_calculator</code></td><td>3 travellers, room capacity 2</td><td>Rooms = 2 (ceiling division)</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-02</td><td><code>test_trip_calculator</code></td><td>Nights = 0</td><td>Accommodation = PKR 0.00</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-03</td><td><code>test_trip_calculator</code></td><td>Base subtotal PKR 34,000</td><td>Emergency allowance = 5% = PKR 1,700</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-04</td><td><code>test_feasibility_checker</code></td><td>Cost equals budget</td><td>Status: exactly within budget</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-05</td><td><code>test_feasibility_checker</code></td><td>Budget short by PKR 1</td><td>Status: over budget, shortage PKR 1</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-06</td><td><code>test_feasibility_checker</code></td><td>Budget above cost by PKR 1</td><td>Status: within budget</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-07</td><td><code>test_trip_optimizer</code></td><td>Every generated alternative</td><td>Re-costed as affordable (0 false positives)</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-08</td><td><code>test_trip_planner</code></td><td>Modify a plan, then cancel</td><td>Original plan stays unchanged</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-09</td><td><code>test_trip_planner</code></td><td>Confirm a plan</td><td>Persisted to trips JSON</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-10</td><td><code>test_budget_manager</code></td><td>Zero or negative budget</td><td>Rejected with a clear error</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-11</td><td><code>test_budget_manager</code></td><td>Duplicate category name</td><td>Rejected</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-12</td><td><code>test_budget_manager</code></td><td>Electricity actual 26,000 vs planned 20,000</td><td>Flagged as overspent by PKR 6,000</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-13</td><td><code>test_validators</code></td><td>Nights greater than days</td><td>Rejected</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-14</td><td><code>test_validators</code></td><td>Invalid email or date</td><td>Rejected with message</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-15</td><td><code>test_data_manager</code></td><td>Corrupted JSON file</td><td>Recovered, no crash</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-16</td><td><code>test_data_manager</code></td><td>Missing data directory</td><td>Created automatically</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-17</td><td><code>test_pdf_generator</code></td><td>Unconfirmed trip</td><td>ValueError, no PDF written</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-18</td><td><code>test_pdf_generator</code></td><td>Two PDFs in the same second</td><td>Unique filenames, no overwrite</td><td><span class="b ok">Pass</span></td></tr><tr><td>TC-19</td><td><code>test_report_generator</code></td><td>Ranked alternatives table</td><td>Sorted best score first</td><td><span class="b ok">Pass</span></td></tr></table></div></section>
+<section id="audit"><h2 class="rv2">Audit report</h2><p class="note">Findings come from the project README and its recorded test run, not a fresh execution.</p><div class="tw rv2"><table><tr><th>Check</th><th>Result</th></tr><tr><td>Input validation, room ceiling division, zero-night rule</td><td><span class="b ok">Pass</span></td></tr><tr><td>Feasibility: within, exact and over budget classified</td><td><span class="b ok">Pass</span></td></tr><tr><td>Optimizer: every option re-costed as affordable</td><td><span class="b ok">Pass</span></td></tr><tr><td>Non-destructive modify: cancel keeps the original</td><td><span class="b ok">Pass</span></td></tr><tr><td>Budget manager: templates, custom categories, overspend flags</td><td><span class="b ok">Pass</span></td></tr><tr><td>JSON persistence with corrupted-file recovery</td><td><span class="b ok">Pass</span></td></tr><tr><td>PDF reports behind a confirmation gate, footer on every page</td><td><span class="b ok">Pass</span></td></tr><tr><td>Pytest suite: 104 tests, 104 passed</td><td><span class="b ok">Pass</span></td></tr><tr><td>config/developer.json still holds placeholder name and email</td><td><span class="b w">Review</span></td></tr></table></div></section></main>
+<footer><img class="w fw" src="assets/footer.svg" alt="Smart Life Planner. Instructor: Muhammad Waleed Shehbaz. Author: Maida Javed"><img class="div" src="assets/divider.svg" alt=""><div class="fb"><a href="https://github.com/MaidaJaved23"><img src="assets/btn-author.svg" alt="Author: Maida Javed"></a><a href="https://github.com/MaidaJaved23/python-smart-life-planner"><img src="assets/btn-github.svg" alt="GitHub: View the repository"></a></div><div class="fb"><a href="https://github.com/MaidaJaved23/python-smart-life-planner"><img src="assets/btn-star.svg" alt="Give me a star: Support this project"></a></div></footer>
+<div id="lb" role="dialog" aria-label="Image preview"><img alt=""></div>
+<script>
+(function(){
+var rm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* scroll progress */
+var bar=document.getElementById('bar');
+function prog(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?h.scrollTop/m*100:0)+'%'}
+addEventListener('scroll',prog,{passive:true});prog();
+/* cursor glow */
+var gl=document.getElementById('glow');
+addEventListener('pointermove',function(e){gl.style.left=e.clientX+'px';gl.style.top=e.clientY+'px'},{passive:true});
+/* typewriter */
+var tag=document.getElementById('tag'),txt='Plan trips. Beat the budget. Ship the PDF.',i=0;
+function type(){if(rm){tag.textContent=txt;return}tag.textContent=txt.slice(0,i++);if(i<=txt.length)setTimeout(type,55);else setTimeout(function(){i=0;type()},4200)}
+type();
+/* table rows */
+document.querySelectorAll('.tw tr').forEach(function(r,k){if(r.querySelector('td')){r.classList.add('rv');r.style.transitionDelay=(k%10)*40+'ms'}});
+/* reveal + counters */
+function count(el){var n=+el.dataset.n,s=el.dataset.s||'';if(rm){el.textContent=n+s;return}var t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add('in');var c=e.target.querySelector&&e.target.querySelector('[data-n]');if(c)count(c);io.unobserve(e.target)})},{threshold:.12});
+document.querySelectorAll('.rv2,tr.rv').forEach(function(el){io.observe(el)});
+/* nav highlight */
+var links=[].slice.call(document.querySelectorAll('nav a'));
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(function(s){so.observe(s)});
+/* 3D tilt */
+if(!rm&&matchMedia('(hover:hover)').matches){document.querySelectorAll('.card').forEach(function(c){
+c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transition='border-color .3s,box-shadow .3s';c.style.transform='perspective(1000px) rotateY('+x*6+'deg) rotateX('+-y*6+'deg) translateY(-4px)'});
+c.addEventListener('pointerleave',function(){c.style.transition='transform .5s,border-color .3s,box-shadow .3s';c.style.transform=''})})}
+/* lightbox */
+var lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.card img').forEach(function(im){im.addEventListener('click',function(){li.src=im.src;li.alt=im.alt;lb.classList.add('on')})});
+lb.addEventListener('click',function(){lb.classList.remove('on')});
+addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+})();
+</script></body></html>
