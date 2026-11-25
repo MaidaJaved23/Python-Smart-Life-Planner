@@ -1,6 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 56" width="1000" height="56">
-<defs><clipPath id="c"><rect x="0" y="0" width="0" height="56"><animate attributeName="width" values="0;760;760;0" keyTimes="0;.55;.9;1" dur="7s" repeatCount="indefinite"/></rect></clipPath>
-<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".6" stop-color="#2DF5A8"/><stop offset="1" stop-color="#FFC857"/></linearGradient></defs>
-<g clip-path="url(#c)"><text x="500" y="36" font-size="26" font-weight="700" text-anchor="middle" fill="url(#g)" font-family="Consolas,'Courier New',monospace" transform="translate(0 0)">Plan trips. Beat the budget. Ship the PDF.</text></g>
-<rect y="10" width="3" height="34" fill="#22D3EE"><animate attributeName="x" values="109;651;651;109" keyTimes="0;.55;.9;1" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 60" width="1000" height="60">
+  <defs>
+    <!-- Vibrant Theme Gradient: Cyan -> Mint -> Gold -->
+    <linearGradient id="tagline-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#2DF5A8"/>
+      <stop offset="100%" stop-color="#FFC857"/>
+    </linearGradient>
+
+    <!-- ClipPath spanning from x=170 to x=850 (680px wide), ensuring "PDF." is never truncated -->
+    <clipPath id="type-clip">
+      <rect x="170" y="0" width="680" height="60" class="clip-rect">
+        <animate attributeName="width"
+                 values="0; 680; 680; 0"
+                 keyTimes="0; 0.50; 0.88; 1"
+                 dur="6s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .clip-rect {
+      width: 680px; /* Fallback: full text visible if animation unsupported */
+      animation: type-reveal 6s steps(42) infinite;
+    }
+    @keyframes type-reveal {
+      0%, 5%   { width: 0px; }
+      50%, 88% { width: 680px; }
+      96%, 100%{ width: 0px; }
+    }
+    .cursor-line {
+      fill: #22D3EE;
+      animation: cursor-travel 6s steps(42) infinite, cursor-blink 0.75s step-end infinite;
+    }
+    @keyframes cursor-travel {
+      0%, 5%   { transform: translateX(0px); opacity: 1; }
+      50%, 88% { transform: translateX(642px); opacity: 1; }
+      96%, 100%{ transform: translateX(0px); opacity: 0; }
+    }
+    @keyframes cursor-blink {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0; }
+    }
+    .text-body {
+      font-family: Consolas, "Courier New", "JetBrains Mono", monospace;
+      font-size: 25px;
+      font-weight: 700;
+      fill: url(#tagline-grad);
+    }
+  </style>
+
+  <!-- Full Tagline Text with Clip Mask -->
+  <g clip-path="url(#type-clip)">
+    <text x="178" y="38" class="text-body">Plan trips. Beat the budget. Ship the PDF.</text>
+  </g>
+
+  <!-- Cursor positioned at start (x=178) moving to end of PDF. (x=820) -->
+  <rect x="178" y="14" width="3" height="30" class="cursor-line">
+    <animate attributeName="x"
+             values="178; 820; 820; 178"
+             keyTimes="0; 0.50; 0.88; 1"
+             dur="6s"
+             repeatCount="indefinite"/>
+    <animate attributeName="opacity"
+             values="1; 0; 1; 0; 1"
+             dur="0.75s"
+             repeatCount="indefinite"/>
+  </rect>
 </svg>
