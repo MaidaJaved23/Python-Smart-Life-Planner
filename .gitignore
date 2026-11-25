@@ -29,7 +29,8 @@ wheels/
 htmlcov/
 
 # Generated PDFs / Reports (keep reports folder via .gitkeep, do not commit sensitive user reports)
-reports/*.pdf
+*.pdf
+reports/*
 !reports/.gitkeep
 
 # IDEs
