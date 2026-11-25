@@ -1,9 +1,9 @@
 <p align="center"><img src="assets/banner.svg" alt="Smart Life Planner banner" width="100%"/></p>
-<p align="center"><a href="https://maidajaved23.github.io/python-smart-life-planner/preview.html"><b>Open the live preview page</b></a> | <a href="https://github.com/MaidaJaved23">GitHub profile</a> | <a href="https://github.com/MaidaJaved23/python-smart-life-planner">Repository</a></p>
+<p align="center"><a href="https://github.com/MaidaJaved23/Smart-Life-Planner/blob/main/preview.html"><b>Open the live preview page</b></a> | <a href="https://github.com/MaidaJaved23">GitHub profile</a> | <a href="https://github.com/MaidaJaved23/python-smart-life-planner">Repository</a></p>
 <p align="center"><a href="https://github.com/MaidaJaved23/python-smart-life-planner"><img src="assets/star-button.svg" alt="Give it a star" height="48"/></a> <a href="https://github.com/MaidaJaved23"><img src="assets/profile-button.svg" alt="GitHub profile" height="48"/></a></p>
 <p align="center"><img src="assets/tagline.svg" alt="Plan trips. Beat the budget. Ship the PDF." width="100%"/></p>
 <p align="center"><img src="assets/badge-python.svg" alt="Python 3.10+" height="28"/> <img src="assets/badge-deps.svg" alt="Dependencies: reportlab, pytest" height="28"/> <img src="assets/badge-interface.svg" alt="Interface: Console Menu" height="28"/> <img src="assets/badge-tests.svg" alt="Tests: 104 checks passing" height="28"/> <img src="assets/badge-storage.svg" alt="Storage: JSON" height="28"/></p>
-<p align="center"><a href="https://maidajaved23.github.io/python-smart-life-planner/preview.html"><img src="assets/live-preview.svg" alt="Open Live Preview" height="48"/></a></p>
+<p align="center"><a href="https://github.com/MaidaJaved23/Smart-Life-Planner/blob/main/preview.html"><img src="assets/live-preview.svg" alt="Open Live Preview" height="48"/></a></p>
 
 ## <img src="assets/icons/ico-title.svg" width="40" height="40" align="absmiddle" alt=""/> Smart Life Planner: Pakistan Trip Planner & Monthly Budget Manager
 
