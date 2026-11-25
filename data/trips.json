@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "trip_id": "TRIP-20261125-29E2A3",
+    "destination_id": "murree",
+    "destination_name": "Murree",
+    "departure_city": "Lahore",
+    "budget": 60000.0,
+    "travellers": 2,
+    "days": 3,
+    "nights": 2,
+    "travel_category": "Standard",
+    "transport_pref": "AC Coaster / Saloon Car (PKR 3,000)",
+    "accommodation_pref": "3-Star Deluxe Hotel (PKR 5,000/night)",
+    "destination_type_pref": "Mountains",
+    "status": "Within Budget",
+    "cost_breakdown": {
+      "transportation": 6000.0,
+      "rooms_needed": 1,
+      "accommodation": 10000.0,
+      "food": 10800.0,
+      "activities": 7200.0,
+      "emergency_allowance": 1700.0,
+      "total_cost": 35700.0,
+      "cost_per_person": 17850.0,
+      "remaining_budget": 24300.0,
+      "shortage": 0.0
+    },
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Departure from Lahore & Welcome to Murree",
+        "schedule": [
+          "07:00 AM - Morning departure from Lahore via AC Coaster / Saloon Car (PKR 3,000).",
+          "01:00 PM - Arrival in Murree; welcome refreshments and orientation.",
+          "02:00 PM - Check-in at 3-Star Deluxe Hotel (PKR 5,000/night) and relaxation.",
+          "04:00 PM - Initial exploration: Mall Road stroll & shopping.",
+          "07:30 PM - Dinner featuring regional cuisine followed by an evening walk."
+        ],
+        "night_stay": "Overnight at 3-Star Deluxe Hotel (PKR 5,000/night)"
+      },
+      {
+        "day": 2,
+        "title": "Full Day Discovery: Patriata (New Murree) Chairlift & Cable Car ride",
+        "schedule": [
+          "08:00 AM - Breakfast at hotel.",
+          "09:30 AM - Morning excursion: Patriata (New Murree) Chairlift & Cable Car ride.",
+          "01:00 PM - Traditional local lunch and photography session.",
+          "02:30 PM - Afternoon adventure: Kashmir Point scenic viewpoint.",
+          "06:30 PM - Sunset observation from vantage point.",
+          "08:00 PM - Dinner and leisure time."
+        ],
+        "night_stay": "Overnight at 3-Star Deluxe Hotel (PKR 5,000/night)"
+      },
+      {
+        "day": 3,
+        "title": "Farewell Murree & Return to Lahore",
+        "schedule": [
+          "08:00 AM - Breakfast and check-out from hotel.",
+          "09:30 AM - Morning visit: Pindi Point pine walk & souvenir shopping.",
+          "12:00 PM - Farewell lunch with scenic panorama.",
+          "01:30 PM - Departure on return journey towards Lahore.",
+          "08:30 PM - Expected safe arrival in Lahore."
+        ],
+        "night_stay": "Trip concluded - Return to home city"
+      }
+    ],
+    "created_at": "2026-11-25 20:23:35",
+    "confirmed": true
+  }
+]
