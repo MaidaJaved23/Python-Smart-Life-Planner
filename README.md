@@ -38,6 +38,9 @@ An intelligent, production-ready terminal menu-driven Python application integra
 - [12. Visual Documentation](#12-visual-documentation)
 - [13. PDF Report Screenshots](#13-pdf-report-screenshots)
 - [14. Test Case Matrix](#14-test-case-matrix)
+- [15. Video Demonstration](#15-video-demonstration)
+
+<p align="center"><img src="assets/tour-hero.svg" alt="Animated product tour: sign up, plan, review, alternatives, confirm, PDF report" width="100%"/></p>
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
@@ -498,6 +501,18 @@ Run `pytest -v`. The suite has **104 test cases** and all pass. A selection of t
 | TC-19 | `test_report_generator.py` | Ranked alternatives table | Sorted best score first | Pass |
 
 <p align="center"><img src="assets/tests-chart.svg" alt="Tests per file" width="100%"/></p>
+
+<a name="15-video-demonstration"></a>
+
+## <img src="assets/icons/ico-15.svg" width="40" height="40" align="absmiddle" alt=""/> 15. Video Demonstration
+
+Animated walkthrough of the web demo, from sign up to the saved PDF report. It plays on a loop and covers all 12 screens, desktop and mobile:
+
+<p align="center"><img src="assets/demo-video.svg" alt="Animated video walkthrough of the Smart Life Planner demo" width="100%"/></p>
+
+### Screenshots
+
+<p align="center"><img src="assets/screenshots-gallery.svg" alt="Screenshots of the Smart Life Planner web demo" width="100%"/></p>
 
 <p align="center"><img src="assets/divider.svg" alt="" width="100%"/></p>
 
