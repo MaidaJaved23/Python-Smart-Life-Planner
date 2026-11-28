@@ -41,3 +41,7 @@ reports/*.pdf
 # OS
 .DS_Store
 Thumbs.db
+
+# Web app secrets and accounts (never commit these)
+data/users.json
+data/.secret

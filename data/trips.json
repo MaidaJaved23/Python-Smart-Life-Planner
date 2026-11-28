@@ -66,5 +66,60 @@
     ],
     "created_at": "2026-11-25 20:23:35",
     "confirmed": true
+  },
+  {
+    "trip_id": "TRIP-20261128-DA11D2",
+    "destination_id": "hunza",
+    "destination_name": "Hunza",
+    "departure_city": "Sahiwal",
+    "budget": 90000.0,
+    "travellers": 2,
+    "days": 2,
+    "nights": 1,
+    "travel_category": "Budget",
+    "transport_pref": "NATCO Highway Bus (PKR 9,600)",
+    "accommodation_pref": "Karimabad Traditional Inn (PKR 6,300/night)",
+    "destination_type_pref": "Mountains",
+    "status": "Within Budget",
+    "cost_breakdown": {
+      "transportation": 19200.0,
+      "rooms_needed": 1,
+      "accommodation": 6300.0,
+      "food": 8960.0,
+      "activities": 8000.0,
+      "emergency_allowance": 2123.0,
+      "total_cost": 44583.0,
+      "cost_per_person": 22291.5,
+      "remaining_budget": 45417.0,
+      "shortage": 0.0
+    },
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Departure from Sahiwal & Welcome to Hunza",
+        "schedule": [
+          "07:00 AM - Morning departure from Sahiwal via NATCO Highway Bus (PKR 9,600).",
+          "01:00 PM - Arrival in Hunza; welcome refreshments and orientation.",
+          "02:00 PM - Check-in at Karimabad Traditional Inn (PKR 6,300/night) and relaxation.",
+          "04:00 PM - Initial exploration: Baltit & Altit Forts historical tour.",
+          "07:30 PM - Dinner featuring regional cuisine followed by an evening walk."
+        ],
+        "night_stay": "Overnight at Karimabad Traditional Inn (PKR 6,300/night)"
+      },
+      {
+        "day": 2,
+        "title": "Farewell Hunza & Return to Sahiwal",
+        "schedule": [
+          "08:00 AM - Breakfast and check-out from hotel.",
+          "09:30 AM - Morning visit: Attabad Lake jet ski & boating & souvenir shopping.",
+          "12:00 PM - Farewell lunch with scenic panorama.",
+          "01:30 PM - Departure on return journey towards Sahiwal.",
+          "08:30 PM - Expected safe arrival in Sahiwal."
+        ],
+        "night_stay": "Trip concluded - Return to home city"
+      }
+    ],
+    "created_at": "2026-11-28 17:22:23",
+    "confirmed": true
   }
 ]
